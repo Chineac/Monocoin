@@ -1,0 +1,78 @@
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  nav {
+      background-color: #0F0E10;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+  }
+
+  /* logo */
+  .logo {
+      width: fit-content;
+      height: auto;
+  }
+
+  /* nav */
+  ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0%;
+  }
+
+ ul li {
+      margin: 0 20px;
+  }
+
+ ul li a {
+      color: #acacac;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 300;
+  }
+
+  a:hover {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0,7;
+}
+
+  /* botones */
+  .botones {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }
+
+  button {
+      margin: 0 10px;
+      padding: 12px 24px;
+      background-color: #6BDAB0;
+      border: none;
+      border-radius: 24px;
+      font-size: 16px;
+      font-weight: 300;
+      color: #0F0E10;
+      cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #37705a;
+    color: #fff;
+  }
+
+  .ingresar {
+      background-color: #0F0E10;
+      color: #fff;
+      border: 1px solid #fff;
+  }
