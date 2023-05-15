@@ -85,6 +85,10 @@
     align-items: center;
     height: 600px;
     width: 100%;
+    background-image: linear-gradient(to right, green, violet);
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
   .texto1{
     width: 500px;
@@ -105,3 +109,5 @@
     width: 500px;
     height: 400px;
   }
+  /* Seccion 2 */
+ 
