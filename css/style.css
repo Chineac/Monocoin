@@ -2,6 +2,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 20px;
+    background-color: #0F0E10;
   }
 
   /* logo */
@@ -14,7 +15,6 @@
   /* nav */
 
   nav {
-    background-color: #0F0E10;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@
 
   .botones {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
   }
 
@@ -90,10 +90,10 @@
     align-items: center;
     height: 600px;
     width: 100%;
-    background-image: linear-gradient(to right, #6BDAB0, #9E68DD);
+    /* background-image: linear-gradient(to right, #6BDAB0, #9E68DD);
     background-size: 100% 5px;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom; */
   }
 
   .texto1{
@@ -118,6 +118,55 @@
 
   /* Seccion 2 */
 
+  /* Nosotros */
+
+  .nosotros h1{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .staff-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px;
+  }
+
+  .miembro{
+    text-align: center;
+    padding: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: center;
+  }
+
+  .miembro .botones {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+
+  .miembro img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
+    border-radius: 100%;
+  }
+
+  .miembro h3{
+    color: #acacac;
+  }
+
+  .miembro h2{
+    color: #ffffff;
+  }
+
+  .miembro p{
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
 
 /* footer */
 
