@@ -55,10 +55,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 20px;
   }
 
   button {
-      margin: 0 10px;
       padding: 12px 24px;
       background-color: #6BDAB0;
       border: none;
@@ -120,9 +120,15 @@
 
   /* Nosotros */
 
+  .holder{
+    margin: 50px 0px 50px 0px;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
   .nosotros h1{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   .staff-grid{
@@ -131,14 +137,15 @@
     grid-gap: 10px;
     justify-content: space-between;
     align-items: center;
-    margin: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
 
   .miembro{
     text-align: center;
-    padding: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
     justify-content: center;
   }
 
@@ -212,39 +219,32 @@
     margin-bottom: 25px;
   }
 
-  .pie-pagina input{
+  .input-email{
     border: 1px solid #fff;
     background-color: #0F0E10;
     color: #fff;
-    border-radius: 24px;
+    border-radius: 8px;
     width: 150px;
-    height: 40px;
     margin-right: 14px;
     display: inline-flex;
+    font-size: 13px;
+    padding: 12px 10px;
   }
 
-  .pie-pagina .input-submit{
-    height: 40px;
+  .input-submit{
+    padding: 12px 24px;
+    background-color: #6BDAB0;
+    border: none;
     border-radius: 24px;
     font-size: 16px;
     font-weight: 300;
+    color: #0F0E10;
     cursor: pointer;
-    background-color: #0F0E10;
-    color: #fff;
-    border: 1px solid #fff;
-    text-align: center;
   }
 
-  .pie-pagina .input-submit:hover{
-    height: 40px;
-    border-radius: 24px;
-    font-size: 16px;
-    font-weight: 300;
-    cursor: pointer;
+  .input-submit:hover{
     background-color: #37705a;
     color: #fff;
-    border: 1px solid #fff;
-    text-align: center;
   }
 
   .pie-pagina .grupo-1 .social-icons a{
@@ -276,4 +276,57 @@
     padding: 15px;
     text-align: center;
     color: #acacac;
+  }
+
+  /* Contacto */
+
+  .contacto-container{
+    margin-bottom: 100px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .form-container{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 200px;
+  }
+
+  .contacto-container h1{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .info-form p{
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+
+  .info-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 13px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    outline: 0px;
+    background-color: #0F0E10;
+    color: #fff;
+  }
+
+  .datos-contacto a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .datos-contacto a i{
+    color: #6BDAB0;
+    margin-right: 10px;
   }
