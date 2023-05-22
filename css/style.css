@@ -90,6 +90,7 @@
     align-items: center;
     height: 600px;
     width: 100%;
+    margin-bottom: 200px;
     /* background-image: linear-gradient(to right, #6BDAB0, #9E68DD);
     background-size: 100% 5px;
     background-repeat: no-repeat;
@@ -99,15 +100,20 @@
   .texto1{
     width: 500px;
     height: 400px;
-  .texto1,h1{
+      }
+  .texto1 h1{
     color: #fff;
     height: 100px;
     font-size: 50px;
-    text-align: left;  }
+    text-align: left;
+    padding: 20px;
+    line-height: normal;
   }
   
-  .texto1,h1,p{
+  
+  .texto1 p{
     color: #acacac;
+    font-size: 16px;
   }
 
   .img1{
@@ -117,12 +123,15 @@
   }
 
   /* Seccion 2 */
-
+ 
   /* Nosotros */
-
+  .holder{
+    margin-bottom: 100px;
+  }
   .nosotros h1{
     text-align: center;
     margin-bottom: 50px;
+
   }
 
   .staff-grid{
