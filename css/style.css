@@ -5,52 +5,98 @@
     background-color: #0F0E10;
   }
 
-  /* logo */
+/* logo */
 
+.logo {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* nav */
+
+nav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+ul.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+ul.menu li {
+  margin: 0 20px;
+}
+
+ul.menu li a {
+  color: #acacac;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+ul.menu li a:hover {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.toggle-btn {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.ingreso button {
+  margin-right: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  
   .logo {
-      width: fit-content;
-      height: auto;
-      display: flex;
-      align-items: center;
+    margin-right: auto;
   }
 
-  /* nav */
+  .toggle-btn {
+    display: block;
+  }
 
-  nav {
-    color: #fff;
+  ul.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #0F0E10;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  ul.menu.open {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
+  }
+
+  ul.menu li {
+    margin: 10px 0;
+  }
+
+  .ingreso {
+    display: none;
+  }
+
 }
-
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    margin: 0;
-  }
-
- ul li {
-      margin: 0 20px;
-  }
-
- ul li a {
-      color: #acacac;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 300;
-  }
-
-  a:hover {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 300;
-    opacity: 2.7;
-}
+  
 
   /* Fondo con video */
   #Bienvenida {
@@ -306,108 +352,149 @@ width: 750px;
   }
 
 /* footer */
-  .pie-pagina {
-    width: 100%;
-    background-color: #0F0E10;
-    background-image: linear-gradient(to right, #6BDAB0, #9E68DD);
-    background-size: 100% 5px;
-    background-repeat: no-repeat;
-    background-position: up;
-  }
 
+.pie-pagina {
+  width: 100%;
+  background-color: #0F0E10;
+  background-image: linear-gradient(to right, #6BDAB0, #9E68DD);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: up;
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .isologo{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.isologo img{
+  width: 150px;
+  height: 150px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}  
+
+.pie-pagina .grupo-1 .box p{
+  margin-bottom: 10px;
+  color: rgb(146, 144, 144);
+}
+
+.input-email{
+  border: 1px solid #fff;
+  background-color: #0F0E10;
+  color: #fff;
+  border-radius: 8px;
+  width: 150px;
+  margin-right: 14px;
+  display: inline-flex;
+  font-size: 13px;
+  padding: 12px 10px;
+}
+
+.input-submit{
+  padding: 12px 24px;
+  background-color: #6BDAB0;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #0F0E10;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.input-submit:hover{
+  background-color: #37705a;
+  color: #fff;
+}
+
+.pie-pagina .grupo-1 .social-icons a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #9E68DD;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.pie-pagina .grupo-1 .social-icons a:hover{
+  display: inline-block;
+  line-height: 45px;
+  width: 45px;
+  height: 45px;
+  color: #9E68DD;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+.pie-pagina .grupo-2{
+  background-color: #1a181b;
+  padding: 15px;
+  text-align: center;
+  color: #acacac;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 800px){
   .pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-gap: 50px;
-    padding: 45px 0px;
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
   }
 
   .pie-pagina .isologo{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
   }
 
   .isologo img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
   }
 
-  .pie-pagina .grupo-1 .box h2 {
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-  }  
-
-  .pie-pagina .grupo-1 .box p{
-    margin-bottom: 10px;
-    color: rgb(146, 144, 144);
+  .pie-pagina .grupo-1 .box{
+    text-align: center;
   }
 
   .input-email{
-    border: 1px solid #fff;
-    background-color: #0F0E10;
-    color: #fff;
-    border-radius: 8px;
-    width: 150px;
-    margin-right: 14px;
-    display: inline-flex;
-    font-size: 13px;
-    padding: 12px 10px;
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 14px;
   }
 
   .input-submit{
-    padding: 12px 24px;
-    background-color: #6BDAB0;
-    border: none;
-    border-radius: 24px;
-    font-size: 16px;
-    font-weight: 300;
-    color: #0F0E10;
-    cursor: pointer;
-    margin-top: 25px;
+    margin-top: 0px;
   }
-
-  .input-submit:hover{
-    background-color: #37705a;
-    color: #fff;
-  }
-
-  .pie-pagina .grupo-1 .social-icons a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: #9E68DD;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 25px;
-  }
-
-  .pie-pagina .grupo-1 .social-icons a :hover{
-    display: inline-block;
-    line-height: 45px;
-    width: 45px;
-    height: 45px;
-    color: #9E68DD;
-    background-color: #ffffff;
-    border-radius: 100%;
-  }
-
-  .pie-pagina .grupo-2{
-    background-color: #1a181b;
-    padding: 15px;
-    text-align: center;
-    color: #acacac;
-  }
+}
 
   /* Contacto */
   .contacto-container{
