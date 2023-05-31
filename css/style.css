@@ -185,7 +185,7 @@
   left: 50%;
   height: 400px;
   width: 750px; 
-  border: 3px solid white;
+  border: 3px solid #6BDAB0;
   background: black;
 
 }
@@ -203,7 +203,7 @@
 #carta2{
   height: 400px;
   width: 750px; 
-  border: 3px solid white;
+  border: 3px solid #6BDAB0;
   background: black;
 }
 
@@ -231,7 +231,7 @@ width: 750px;
   left: 50%;
   height: 400px;
   width: 750px; 
-  border: 3px solid white;
+  border: 3px solid #6BDAB0;
   background: black;
   }
   #carta3 h5{
