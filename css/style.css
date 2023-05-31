@@ -167,6 +167,83 @@
   }
 
   /* Seccion 2 */
+
+  .secion2{
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+  }
+
+.titulo2 h1{
+  text-align: center;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+
+#carta1{
+  left: 50%;
+  height: 400px;
+  width: 750px; 
+  border: 3px solid white;
+  background: black;
+
+}
+#carta1 h5{
+  color: white;
+  font-size: 4vh;
+}
+
+#carta1 p{
+  color: gray;
+  text-align: center;
+  margin-top: 70px;
+}
+
+#carta2{
+  height: 400px;
+  width: 750px; 
+  border: 3px solid white;
+  background: black;
+}
+
+
+#carta2 h5{
+  color: white;
+  font-size: 4vh;
+}
+
+#carta2 p{
+  color: gray;
+  text-align: center;
+  margin-top: 70px;
+}
+
+#carta3{
+left: 50%;
+height: 400px;
+width: 750px;
+
+ 
+}
+
+#carta3{
+  left: 50%;
+  height: 400px;
+  width: 750px; 
+  border: 3px solid white;
+  background: black;
+  }
+  #carta3 h5{
+    color: white;
+    font-size: 4vh;
+  }
+
+  #carta3 p{
+    color: gray;
+    text-align: center;
+    margin-top: 50px;
+  }
  
   /* Nosotros */
   .holder{
