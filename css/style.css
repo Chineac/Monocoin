@@ -408,7 +408,7 @@ button:hover {
   color: rgb(146, 144, 144);
 }
 
-.input-email {
+#input-email {
   border: 1px solid #fff;
   background-color: #0f0e10;
   color: #fff;
@@ -416,8 +416,14 @@ button:hover {
   width: 150px;
   margin-right: 14px;
   display: inline-flex;
-  font-size: 13px;
+  font-size: 16px;
   padding: 12px 10px;
+}
+
+#mensaje-confirmacion {
+  display: none;
+  color:#6bdab0;
+  margin-top: 30px;
 }
 
 .input-submit {
@@ -497,7 +503,7 @@ button:hover {
     text-align: center;
   }
 
-  .input-email {
+  #input-email {
     width: 100%;
     margin-right: 0px;
     margin-bottom: 14px;
@@ -541,7 +547,7 @@ button:hover {
 textarea {
   width: 100%;
   padding: 15px 10px;
-  font-size: 13px;
+  font-size: 16px;
   border: 1px solid #ffffff;
   border-radius: 8px;
   margin-bottom: 20px;
