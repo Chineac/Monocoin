@@ -55,8 +55,9 @@ document.getElementById("formulario-contacto").addEventListener("submit", functi
   var nombre = document.getElementsByName("Nombre")[0].value;
   var email = document.getElementsByName("Email")[0].value;
   var mensaje = document.getElementsByName("mensaje")[0].value;
+  var emoji = "\uD83D\uDC35";
 
-  var mensajeConfirmacion = "¡Tu consulta ha sido enviada!";
+  var mensajeConfirmacion = ("¡Tu monito ha sido enviado!" + (emoji));
   alert(mensajeConfirmacion);
 
   document.getElementById("formulario-contacto").reset();
