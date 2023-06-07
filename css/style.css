@@ -208,12 +208,14 @@ button:hover {
   align-items: center;
   height: 600px;
   width: 100%;
-  margin-bottom: 200px;
+  padding: 10%;
 }
 
 .texto1 {
   width: 500px;
   height: 400px;
+  margin: 2%;
+  padding: 2%;
 }
 
 .texto1 h1 {
@@ -235,16 +237,21 @@ button:hover {
   height: 400px;
 }
 
-@media (max-width: 768px) {
+/* Seccion 1 responsive */
+
+@media (max-width: 800px) {
   #secion1 {
     flex-direction: column;
     height: auto;
+    padding: 5%;
   }
 
   .texto1,
   .img1 {
     width: 100%;
     height: auto;
+    text-align: center;
+    justify-content: center;
   }
 
   .texto1 h1 {
@@ -255,9 +262,14 @@ button:hover {
   .texto1 p {
     text-align: center;
   }
+
+  .img1 img {
+    max-width: 80%;
+    height: auto;
+  }
+
 }
 
-/* Estilos para pantallas pequeñas */
 @media (max-width: 480px) {
   .texto1 h1 {
     font-size: 30px;
@@ -266,18 +278,15 @@ button:hover {
   .texto1 p {
     font-size: 14px;
   }
-  .img1 {;
-  width: auto;
-  height: auto;
-  }
 }
+
 /* Seccion 2 */
 
 .seccion2 {
   margin-bottom: 100px;
   margin-top: 100px;
   max-width: 100%;
-  padding: 0 20px; /* Agrega un espacio de relleno opcional para evitar que el contenido se ajuste demasiado a los bordes */
+  padding: 0 20px;
 }
 
 .titulo2 h1 {
