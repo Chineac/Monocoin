@@ -124,6 +124,7 @@ ul.menu li a:hover {
 #Bienvenida {
   min-height: 100vh;
   position: relative;
+  width: 100%;
 }
 
 .welcome {
@@ -234,11 +235,49 @@ button:hover {
   height: 400px;
 }
 
+@media (max-width: 768px) {
+  #secion1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .texto1,
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .texto1 h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .texto1 p {
+    text-align: center;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+  .texto1 h1 {
+    font-size: 30px;
+  }
+
+  .texto1 p {
+    font-size: 14px;
+  }
+  .img1 {;
+  width: auto;
+  height: auto;
+  }
+}
 /* Seccion 2 */
 
-.secion2 {
+.seccion2 {
   margin-bottom: 100px;
   margin-top: 100px;
+  max-width: 100%;
+  padding: 0 20px; /* Agrega un espacio de relleno opcional para evitar que el contenido se ajuste demasiado a los bordes */
 }
 
 .titulo2 h1 {
@@ -252,40 +291,40 @@ button:hover {
   height: 400px;
   width: 750px;
   background-color: #0f0e10;
+  max-width: 100%;
+  margin-bottom: 30px;
 }
 
 #carta1 h5 {
   color: white;
-  font-size: 4vh;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 #carta1 p {
   color: gray;
   text-align: left;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 #carta2 {
   height: 400px;
   width: 750px;
   background-color: #0f0e10;
+  max-width: 100%;
+  margin-bottom: 30px;
 }
 
 #carta2 h5 {
   color: white;
-  font-size: 4vh;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 #carta2 p {
   color: gray;
   text-align: left;
-  margin-top: 70px;
-}
-
-#carta3 {
-  left: 50%;
-  height: 400px;
-  width: 750px;
+  margin-top: 20px;
 }
 
 #carta3 {
@@ -293,17 +332,20 @@ button:hover {
   height: 400px;
   width: 750px;
   background-color: #0f0e10;
+  max-width: 100%;
+  margin-bottom: 30px;
 }
 
 #carta3 h5 {
   color: white;
-  font-size: 4vh;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 #carta3 p {
   color: gray;
   text-align: left;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 /* Nosotros */
