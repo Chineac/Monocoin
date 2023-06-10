@@ -14,7 +14,7 @@ switch (Nombre.trim()) {
     break;
 
   case "Vannesa":
-    alert("¡Bienvenida Vane!");
+    alert("¡Bienvenida Vanne!");
     console.log("Mensaje mostrado: !Bienvenida Vane!");
     break;
 

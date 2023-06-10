@@ -5,6 +5,7 @@
   background-color: #0f0e10;
 }
 
+
 /* logo */
 
 .logo {
@@ -209,6 +210,7 @@ button:hover {
   height: 600px;
   width: 100%;
   padding: 10%;
+  margin-bottom: 5%;
 }
 
 .texto1 {
@@ -219,6 +221,7 @@ button:hover {
 }
 
 .texto1 h1 {
+  line-height: 60px;
   color: #fdfcfc;
   font-size: 50px;
   text-align: left;
@@ -280,13 +283,18 @@ button:hover {
   }
 }
 
-/* Seccion 2 */
+/* Como funciona */
 
 .seccion2 {
   margin-bottom: 100px;
   margin-top: 100px;
   max-width: 100%;
   padding: 0 20px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .titulo2 h1 {
@@ -296,12 +304,12 @@ button:hover {
 }
 
 #carta1 {
-  left: 50%;
-  height: 400px;
-  width: 750px;
+  height: 90%;
+  width: 80%;
   background-color: #0f0e10;
   max-width: 100%;
   margin-bottom: 30px;
+  margin-right: auto;
 }
 
 #carta1 h5 {
@@ -317,11 +325,12 @@ button:hover {
 }
 
 #carta2 {
-  height: 400px;
-  width: 750px;
+  height: 90%;
+  width: 80%;
   background-color: #0f0e10;
   max-width: 100%;
   margin-bottom: 30px;
+  margin-left: auto;
 }
 
 #carta2 h5 {
@@ -337,12 +346,12 @@ button:hover {
 }
 
 #carta3 {
-  left: 50%;
-  height: 400px;
-  width: 750px;
+  height: 90%;
+  width: 80%;
   background-color: #0f0e10;
   max-width: 100%;
   margin-bottom: 30px;
+  margin-right: auto;
 }
 
 #carta3 h5 {
@@ -356,6 +365,12 @@ button:hover {
   text-align: left;
   margin-top: 20px;
 }
+#imagen2{
+  width: 100%;
+  height: 90%;
+}
+
+
 
 /* Nosotros */
 
@@ -438,6 +453,149 @@ button:hover {
   }
 }
 
+
+
+/* Contacto */
+
+.contacto-container {
+  margin-bottom: 100px;
+  margin-top: 100px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 200px;
+}
+
+.contacto-container h1 {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #f8f5f5;
+}
+
+.info-form p {
+  margin-top: auto;
+  margin-bottom: 20px;
+  color: #f6f8f7;
+}
+
+.info-form form .campo,
+textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  outline: 0px;
+  background-color: #0f0e10;
+  color: #fff;
+}
+
+.datos-contacto a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.datos-contacto a i {
+  color: #6bdab0;
+  margin-right: 10px;
+}
+
+#mapa-solo {
+  width: 80%;
+  height: 250px;
+}
+
+.input-contacto{
+  padding: 12px 24px;
+  background-color: #6bdab0;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #0f0e10;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+/* Responsive Contacto */
+
+@media (max-width: 1024px) {
+  .info-form,
+  .mapa-container {
+    padding: 0 20px;
+  }
+
+  #mapa-solo {
+    width: 100%;
+    height: 250px;
+  }
+
+  .contacto-container h1 {
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .info-form,
+  .mapa-container {
+    padding: 0 20px;
+  }
+
+  .datos-contacto {
+    text-align: center;
+  }
+
+  #mapa-solo {
+    width: 100%;
+    height: 300px;
+  }
+
+  .contacto-container h1 {
+    margin-bottom: 30px;
+  }
+
+  .input-contacto{
+    display: block;
+    margin: 25px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-form,
+  .mapa-container {
+    padding: 0 20px;
+  }
+
+  .datos-contacto {
+    text-align: center;
+  }
+
+  #mapa-solo {
+    width: 100%;
+    height: 300px;
+  }
+
+  .contacto-container h1 {
+    margin-bottom: 30px;
+  }
+}
 /* Footer */
 
 .pie-pagina {
@@ -586,147 +744,5 @@ button:hover {
 
   .input-submit {
     margin-top: 0px;
-  }
-}
-
-/* Contacto */
-
-.contacto-container {
-  margin-bottom: 100px;
-  margin-top: 100px;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.form-container {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 200px;
-}
-
-.contacto-container h1 {
-  text-align: center;
-  margin-bottom: 60px;
-  color: #f8f5f5;
-}
-
-.info-form p {
-  margin-top: auto;
-  margin-bottom: 20px;
-  color: #f6f8f7;
-}
-
-.info-form form .campo,
-textarea {
-  width: 100%;
-  padding: 15px 10px;
-  font-size: 16px;
-  border: 1px solid #ffffff;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  outline: 0px;
-  background-color: #0f0e10;
-  color: #fff;
-}
-
-.datos-contacto a {
-  text-decoration: none;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 15px;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.datos-contacto a i {
-  color: #6bdab0;
-  margin-right: 10px;
-}
-
-#mapa-solo {
-  width: 80%;
-  height: 250px;
-}
-
-.input-contacto{
-  padding: 12px 24px;
-  background-color: #6bdab0;
-  border: none;
-  border-radius: 24px;
-  font-size: 16px;
-  font-weight: 300;
-  color: #0f0e10;
-  cursor: pointer;
-  margin-top: 25px;
-}
-
-/* Responsive Contacto */
-
-@media (max-width: 1024px) {
-  .info-form,
-  .mapa-container {
-    padding: 0 20px;
-  }
-
-  #mapa-solo {
-    width: 100%;
-    height: 250px;
-  }
-
-  .contacto-container h1 {
-    margin-bottom: 30px;
-  }
-
-}
-
-@media (max-width: 768px) {
-  .form-container {
-    grid-template-columns: 1fr;
-    grid-gap: 30px;
-  }
-  .info-form,
-  .mapa-container {
-    padding: 0 20px;
-  }
-
-  .datos-contacto {
-    text-align: center;
-  }
-
-  #mapa-solo {
-    width: 100%;
-    height: 300px;
-  }
-
-  .contacto-container h1 {
-    margin-bottom: 30px;
-  }
-
-  .input-contacto{
-    display: block;
-    margin: 25px auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .info-form,
-  .mapa-container {
-    padding: 0 20px;
-  }
-
-  .datos-contacto {
-    text-align: center;
-  }
-
-  #mapa-solo {
-    width: 100%;
-    height: 300px;
-  }
-
-  .contacto-container h1 {
-    margin-bottom: 30px;
   }
 }
