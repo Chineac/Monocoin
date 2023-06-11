@@ -53,21 +53,24 @@
         </section>
     </main>
 
-<!-- Footer -->
+  <!-- Footer -->
   <footer class="pie-pagina">
     <div class="grupo-1">
       <div class="box">
         <div class="isologo">
-          <img src="..\img\isologo.svg" alt="isologo de monocoin">
+          <img src="../img/isologo.svg" alt="isologo de monocoin">
         </div>
       </div>
       <div class="box">
         <h2>Suscribite a Monocoin</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        <form action="">
-          <input type="email" class="input-email" placeholder="Email">
-          <input type="submit" class="input-submit" value="Enviar">
+        <p>Recibí las últimas noticias sobre el mundo cripto.</p>
+        <form id="subscribe-form" action="">
+          <input type="email" id="input-email" placeholder="Email" required>
+          <input type="submit" class="input-submit" value="Suscribirse">
         </form>
+        <div id="mensaje-confirmacion" style="display: none;">
+          ¡Un nuevo mono se ha unido! &#x1F435;
+        </div>        
       </div>
       <div class="box">
         <h2>Seguinos</h2>

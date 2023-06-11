@@ -210,7 +210,6 @@ button:hover {
   height: 600px;
   width: 100%;
   padding: 10%;
-  margin-bottom: 5%;
 }
 
 .texto1 {
@@ -220,7 +219,7 @@ button:hover {
   padding: 2%;
 }
 
-.texto1 h1 {
+.texto1 h2 {
   line-height: 60px;
   color: #fdfcfc;
   font-size: 50px;
@@ -257,8 +256,8 @@ button:hover {
     justify-content: center;
   }
 
-  .texto1 h1 {
-    font-size: 40px;
+  .texto1 h2 {
+    font-size: 2.5em;
     text-align: center;
   }
 
@@ -274,103 +273,141 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-  .texto1 h1 {
-    font-size: 30px;
+  .texto1 h2 {
+    font-size: 2.5em;
   }
 
   .texto1 p {
     font-size: 14px;
   }
+
+  .img1 img {
+    display: none;
+  }
 }
 
 /* Como funciona */
 
-.seccion2 {
-  margin-bottom: 100px;
-  margin-top: 100px;
-  max-width: 100%;
-  padding: 0 20px;
-}
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.titulo2 h1 {
-  text-align: center;
-  margin-bottom: 50px;
+.concepto,
+.recompensa,
+.adopcion {
+  background-color: #0f0e10;
   color: #fff;
+  padding: 10%;
 }
 
-#carta1 {
-  height: 90%;
-  width: 80%;
-  background-color: #0f0e10;
-  max-width: 100%;
-  margin-bottom: 30px;
-  margin-right: auto;
+.concepto,
+.recompensa,
+.adopcion,
+.texto-concepto,
+.texto-recompensa,
+.texto-adopcion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
 }
 
-#carta1 h5 {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 10px;
+.texto-concepto,
+.texto-recompensa,
+.texto-adopcion {
+  width: 500px;
+  margin: 2%;
+  padding: 2%;
 }
 
-#carta1 p {
-  color: gray;
+.conceptoimg,
+.recompensaimg,
+.adopcionimg {
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-concepto h2,
+.texto-recompensa h2,
+.texto-adopcion h2 {
+  line-height: 60px;
+  color: #fdfcfc;
+  font-size: 2.5em;
   text-align: left;
-  margin-top: 20px;
+  grid-column: 1 / span 2;
 }
 
-#carta2 {
-  height: 90%;
-  width: 80%;
-  background-color: #0f0e10;
-  max-width: 100%;
-  margin-bottom: 30px;
-  margin-left: auto;
+.texto-concepto p,
+.texto-recompensa p,
+.texto-adopcion p {
+  color: #acacac;
+  grid-column: 1 / span 2;
 }
 
-#carta2 h5 {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 10px;
+@media screen and (max-width: 768px) {
+  .concepto,
+  .recompensa,
+  .adopcion,
+  .conceptoimg,
+  .recompensaimg,
+  .adopcionimg,
+  .texto-concepto,
+  .texto-recompensa,
+  .texto-adopcion {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .concepto,
+  .recompensa,
+  .adopcion {
+    padding: 5%;
+  }
+
+  .texto-concepto,
+  .texto-recompensa,
+  .texto-adopcion {
+    width: 90%;
+    margin: 2% auto;
+    padding: 0;
+  }
+  
+  .texto-concepto p,
+  .texto-recompensa p,
+  .texto-adopcion p {
+    text-align: center;
+  }
+  
+  .texto-concepto h2,
+  .texto-recompensa h2,
+  .texto-adopcion h2 {
+    text-align: center;
+  }
 }
 
-#carta2 p {
-  color: gray;
-  text-align: left;
-  margin-top: 20px;
+@media screen and (max-width: 480px) {
+  .texto-concepto,
+  .texto-recompensa,
+  .texto-adopcion {
+    width: 100%;
+    margin: 2% auto;
+    padding: 0;
+  }
+
+  .conceptoimg,
+  .recompensaimg,
+  .adopcionimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conceptoimg img,
+  .recompensaimg img,
+  .adopcionimg img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-#carta3 {
-  height: 90%;
-  width: 80%;
-  background-color: #0f0e10;
-  max-width: 100%;
-  margin-bottom: 30px;
-  margin-right: auto;
-}
-
-#carta3 h5 {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-#carta3 p {
-  color: gray;
-  text-align: left;
-  margin-top: 20px;
-}
-#imagen2{
-  width: 100%;
-  height: 90%;
-}
-
-
+  
 
 /* Nosotros */
 
@@ -379,10 +416,11 @@ button:hover {
   margin-top: 100px;
 }
 
-.nosotros h1 {
+.nosotros h2 {
   text-align: center;
   margin-bottom: 50px;
   color: #fff;
+  font-size: 2.5em;
 }
 
 .staff-grid {
@@ -473,10 +511,11 @@ button:hover {
   grid-gap: 200px;
 }
 
-.contacto-container h1 {
+.contacto-container h2 {
   text-align: center;
   margin-bottom: 60px;
   color: #f8f5f5;
+  font-size: 2.5em;
 }
 
 .info-form p {
@@ -596,6 +635,7 @@ textarea {
     margin-bottom: 30px;
   }
 }
+
 /* Footer */
 
 .pie-pagina {
